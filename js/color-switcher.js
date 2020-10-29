@@ -38,7 +38,8 @@ function randomIntegerFromInterval(min, max) {
 }
 
 function changeBackgroundColor(colors) {
-  const color = randomIntegerFromInterval(0, colors.length);
+  const colorsLength = colors.length - 1;
+  const color = randomIntegerFromInterval(0, colorsLength);
 
   refs.body.style.backgroundColor = colors[color];
 }
